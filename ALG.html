@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>artlightglas inseart_data </title>
+        <link rel="stylesheet" href="ALG_gen.css">
+    </head>
+    <body>
+        <div id= "intery">
+            <div id="part">
+                <h2>Title of the product:</h2>
+                 <input type="text" id="title" name="title" placeholder="enter the title of the product">
+           </div>
+            <div id="part">
+                 <h2>Price of the product:</h2>
+                 <input type="number" id="price" name="price" placeholder="enter the price of the product">
+            </div>
+            <div id="part">
+                 <h2>Description of the product:</h2>   
+                <textarea id="description" rows="20" cols="50" name="description" placeholder="enter the description of the product"></textarea>
+            </div>
+            <div id="part">
+                <h2>Image link:</h2>
+                <input type="url" id="image" placeholder="enter the image link for the product">
+            </div>
+            <div id="part">
+                <h2>Quantity of the product:</h2>
+                <input type="number" id="quantity" name="quantity" min="0" step="1" placeholder="enter the quantity of the product">
+            </div>
+            <div id="part">
+                <h2>Product option</h2>
+                <input type="text" id="small" name="options" placeholder="enter the options of the product">
+                <input type="text" id="medium" name="options" placeholder="enter the options of the product">
+            </div>
+
+            <div id="submit">
+                <button id="saveBtn" onclick="insertData()">Save Product</button>
+                <button id="create" onclick="createProductPage()">Create page for the product</button >
+            </div>
+            <div id="search">
+                    <input type="text" id="searchInput" placeholder="Search products...">
+                    <button id="searchButton" >Search</button>    
+            </div>
+            <div id="searchResults">
+                <ul id="resultsList">
+                    <!-- Search results will be displayed here -->
+                 <li id="productList">
+   
+                    <!--input type="checkbox" class="selectProduct" checked="true"></li--> 
+                 </li>
+                </ul>
+               
+
+            </div>
+
+        </div>
+        <script src="ALG_gen.js"></script>
+    </body>
+</html>    
